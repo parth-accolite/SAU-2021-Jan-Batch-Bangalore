@@ -1,0 +1,159 @@
+insert into CricketAssignment
+values
+   ("1",{
+    "Name": "AJ Finch",
+    "TeamName": "Australia",
+    "MatchesPlayed": 10,
+    "RunsScored": 507
+  }
+  ),
+   ("2",{
+    "Name": "AT Carey",
+    "TeamName": "Australia",
+    "MatchesPlayed": 10,
+    "RunsScored": 375
+  }
+  ),
+   ("3",{
+    "Name": "BA Stokes",
+    "TeamName": "England",
+    "MatchesPlayed": 11,
+    "RunsScored": 465
+  }
+  ),
+   ("4",{
+    "Name": "C de Grandhomme",
+    "TeamName": "New Zealand",
+    "MatchesPlayed": 10,
+    "RunsScored": 190
+  }
+  ),
+   ("5",{
+    "Name": "DA Warner",
+    "TeamName": "Australia",
+    "MatchesPlayed": 10,
+    "RunsScored": 647
+  }
+  ),
+   ("6",{
+    "Name": "F du Plessis",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 9,
+    "RunsScored": 387
+  }
+  ),
+   ("7",{
+    "Name": "HE van der Dussen",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 9,
+    "RunsScored": 311
+  }
+  ),
+   ("8",{
+    "Name": "HM Amla",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 7,
+    "RunsScored": 203
+  }
+  ),
+   ("9",{
+    "Name": "JDS Neesham",
+    "TeamName": "New Zealand",
+    "MatchesPlayed": 10,
+    "RunsScored": 232
+  }
+  ),
+   ("10",{
+    "Name": "JE Root",
+    "TeamName": "England",
+    "MatchesPlayed": 11,
+    "RunsScored": 556
+  }
+  ),
+   ("11",{
+    "Name": "JJ Roy",
+    "TeamName": "England",
+    "MatchesPlayed": 8,
+    "RunsScored": 443
+  }
+  ),
+   ("12",{
+    "Name": "JM Bairstow",
+    "TeamName": "England",
+    "MatchesPlayed": 11,
+    "RunsScored": 532
+  }
+  ),
+   ("13",{
+    "Name": "KL Rahul",
+    "TeamName": "India",
+    "MatchesPlayed": 9,
+    "RunsScored": 361
+  }
+  ),
+   ("14",{
+    "Name": "KS Williamson",
+    "TeamName": "New Zealand",
+    "MatchesPlayed": 10,
+    "RunsScored": 578
+  }
+  ),
+   ("15",{
+    "Name": "LRPL Taylor",
+    "TeamName": "New Zealand",
+    "MatchesPlayed": 10,
+    "RunsScored": 350
+  }
+  ),
+   ("16",{
+    "Name": "MS Dhoni",
+    "TeamName": "India",
+    "MatchesPlayed": 9,
+    "RunsScored": 273
+  }
+  ),
+   ("17",{
+    "Name": "Q de Kock",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 9,
+    "RunsScored": 305
+  }
+  ),
+   ("18",{
+    "Name": "RG Sharma",
+    "TeamName": "India",
+    "MatchesPlayed": 9,
+    "RunsScored": 648
+  }
+  ),
+   ("19",{
+    "Name": "SPD Smith",
+    "TeamName": "Australia",
+    "MatchesPlayed": 10,
+    "RunsScored": 379
+  }
+  ),
+   ("20",{
+    "Name": "V Kohli",
+    "TeamName": "India",
+    "MatchesPlayed": 9,
+    "RunsScored": 443
+  }
+  )
+
+select * from CricketAssignment 
+where RunsScored > 300
+
+select * from CricketAssignment 
+where RunsScored > 400
+
+select * from CricketAssignment 
+where RunsScored > 500
+
+select * from CricketAssignment 
+where RunsScored > 600
+
+
+create primary index on CricketAssignment
+drop primary index on CricketAssignment
+create index  newIndex on CricketAssignment (newIndex);
