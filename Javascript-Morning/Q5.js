@@ -32,17 +32,13 @@ function validateForm() {
         return;
     }
 
-    var dict = []
-    dict["first name"] = firstName;
-    dict["last name"] = lastName;
-    dict["email"] = email;
-    dict["gender"] = gender;
-    dict["stream"] = stream;
     // testing against .com email ids only
-    if (/[a-zA-Z0-9]*@[a-zA-Z]*.com/.test(email)) {
+    if (/[a-zA-Z0-9]+@[a-zA-Z]+.com/.test(email)) {
         console.log("Email id is of the correct format");
     } else {
         alert("Please re enter email id in the correct format!");
     }
+
+    var dict = JSON.parse(JSON.stringify('{"firstName" :' + firstName + ', "lastName" : ' + lastName + ' ,"emailId" : ' + email + ', "gender" : ' + gender + ', "stream" : ' + stream + '}'));
     console.log(dict);
 }
