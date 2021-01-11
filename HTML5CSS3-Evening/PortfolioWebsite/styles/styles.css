@@ -1,0 +1,71 @@
+.nameTag {
+    grid-area: nameTag;
+    text-align: center;
+}
+
+.ImageTag {
+    grid-area: menu1;
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.LinksTag {
+    grid-area: menu2;
+    /* text-align: left; */
+}
+
+.details {
+    grid-area: details;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.skillsAndLanguage {
+    grid-area: skillsAndLanguage;
+    font-size: small;
+    text-align: center;
+}
+.HobbiesFantasy{
+    grid-area:HobbiesFantasy;
+}
+
+.HobbiesGame {
+    grid-area: HobbiesGame;
+}
+
+.HobbiesOther {
+    grid-area: HobbiesOther;
+}
+
+.Volunteering {
+    grid-area: Volunteering;
+    font-size: small;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'nameTag nameTag nameTag nameTag nameTag nameTag nameTag'
+     'menu1 details details details details skillsAndLanguage skillsAndLanguage'
+      'menu2 details details details details skillsAndLanguage skillsAndLanguage'
+       'HobbiesFantasy HobbiesGame HobbiesGame HobbiesOther HobbiesOther Volunteering Volunteering';
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    background-image: linear-gradient(to bottom right, red, yellow, blue);
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* text-align: center; */
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
