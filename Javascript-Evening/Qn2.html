@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Qn2.js"></script>
+</head>
+
+<body>
+    <form id="inputForm">
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="email">email :</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="age">Age :</label><br>
+        <input type="number" id="age" name="age"><br>
+
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="others" value="Others">
+        <label for="Others">Others</label>
+        <br>
+
+        <label for="rollNo">Roll No:</label><br>
+        <input type="number" id="rollNo" name="rollNo"><br>
+
+        <label for="streamChoices">Choose your stream:</label>
+        <select id="streamChoices">
+            <option value="Comps">Comps</option>
+            <option value="It">It</option>
+            <option value="Etrx">Etrx</option>
+            <option value="Extc">Extc</option>
+        </select>
+        <br>
+
+        <button type="button" onclick="addOccupation()">Submit</button>
+        <br>
+        <input type="text" placeholder="Enter Occupation also" id="Occupation" style="display:none">
+        <button type="button" onClick="validateForm()" style="display:none" id="submitAllDetails">Submit all
+            details</button>
+    </form>
+    <p id="outputDetails" style="display: none;">
+        The details that we got from you are: <br>
+        firstName : <span id="firstNameOutput"></span>  <br>
+        lastName : <span id="lastNameOutput"></span> <br>
+        age : <span id="ageOutput"></span> <br>
+        email : <span id="emailOutput"></span> <br>
+        gender : <span id="genderOutput"></span> <br>
+        rollNo : <span id="rollNoOutput"></span> <br>
+        stream : <span id="streamOutput"></span> <br>
+        occupation : <span id="occupationOutput"></span> <br>
+
+    </p>
+
+</body>
+
+</html>
