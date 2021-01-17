@@ -1,0 +1,12 @@
+.singleTodoContent {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: calc(10px + 2vmin);
+    color: #E0E0E0;
+}
+
+.deleteButtonSpan {
+    cursor: pointer;
+}
