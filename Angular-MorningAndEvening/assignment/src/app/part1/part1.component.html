@@ -1,0 +1,44 @@
+<div>
+    <div id="editSessionHeading">
+        <button (click)="initNewSession(-1)"> Add/Edit session</button>
+    </div>
+    <div id="sessionListDiv">
+        <div *ngFor="let session of sessions">
+            <h1 (click)="expandSession(session.id)">{{session.name}}</h1>
+            {{session.id}}
+            <div *ngIf="expandSessionDetails === session.id">
+                <h3>{{session.trainer}}</h3>
+                <p> {{session.date  }}</p>
+            </div>
+            <button style="color:green" (click)="editSession(session.id)">Edit</button>
+            <button style="color:red" (click)="deleteSession(session.id)">Delete </button>
+            <br>
+        </div>
+    </div>
+    <div id="addNewSessionDiv" style="display:none;">
+        <form [formGroup]="newSessionForm" (ngSubmit)="addNewSession()">
+            <div>
+                <label for="name">
+                    Name
+                </label>
+                <input id="name" type="text" formControlName="name">
+            </div>
+
+            <div>
+                <label for="trainer">
+                    Trainer
+                </label>
+                <input id="trainer" type="text" formControlName="trainer">
+            </div>
+
+            <div>
+                <label for="date">
+                    Date
+                </label>
+                <input id="date" type="date" formControlName="date">
+            </div>
+            <button class="button" type="submit">Add new session</button>
+
+        </form>
+    </div>
+</div>
