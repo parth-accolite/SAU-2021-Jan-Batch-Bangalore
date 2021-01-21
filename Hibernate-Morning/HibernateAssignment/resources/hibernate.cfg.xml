@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+	  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	  <property name="hibernate.connection.url">jdbc:mysql://remotemysql.com:3306/mwXXSMEtQj</property>
+	  <property name="hibernate.connection.username">mwXXSMEtQj</property>
+	  <property name="hibernate.connection.password">StNK3Le0Tc</property>
+	  <property name="show_sql">true</property>
+	  
+	  <!--  <mapping resource="Movie.hbm.xml" />
+	  <mapping class="com.session.au.hibernate.Genre" />  -->
+	  <mapping class="com.au.assignment.LibraryBook" />
+    </session-factory>
+  
+</hibernate-configuration>
